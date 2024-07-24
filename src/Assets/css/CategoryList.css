@@ -1,0 +1,272 @@
+/* Conteneur principal */
+.container2 {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* En-tête */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.back-button, .search-button, .share-button {
+    background-color: #007bff; /* Bleu */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover, .search-button:hover, .share-button:hover {
+    background-color: #0056b3; /* Bleu foncé */
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 300px;
+    max-width: 100%;
+}
+
+/* Icônes de médias sociaux */
+.social-media {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.social-media p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons .icon {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-icons .facebook:hover {
+    color: #4267B2; /* Facebook color */
+}
+
+.social-icons .instagram:hover {
+    color: #C13584; /* Instagram color */
+}
+
+.social-icons .tiktok:hover {
+    color: #000; /* TikTok color */
+}
+
+/* Liste des marques */
+.brands-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.brand-item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.brand-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.brand-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.why-button {
+    background-color: #007bff; /* Bleu */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.why-button:hover {
+    background-color: #0056b3; /* Bleu foncé */
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #007bff; /* Bleu */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #0056b3; /* Bleu foncé */
+}
+
+.pagination .active {
+    background-color: #0056b3; /* Bleu foncé */
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover {
+    color: #ff5c5c;
+}
+
+.modal-content {
+    color: #444;
+    text-align: left;
+}
+
+.modal-content h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.modal-content p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.brand-image {
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.close-button, .source-button {
+    background-color: #007bff; /* Bleu */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover, .source-button:hover {
+    background-color: #0056b3; /* Bleu foncé */
+}
+
+.source-button {
+    background-color: #28a745; /* Vert */
+}
+
+.source-button:hover {
+    background-color: #218838; /* Vert foncé */
+}

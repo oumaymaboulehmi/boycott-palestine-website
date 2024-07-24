@@ -1,0 +1,117 @@
+/* Overlay du modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Conteneur du modal */
+.modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Animation d'apparition du modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* En-tête du modal */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover {
+    color: #ff5c5c;
+}
+
+/* Contenu du modal */
+.modal-content {
+    color: #444;
+}
+
+.modal-content h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.modal-content p {
+    font-size: 16px;
+}
+
+.brand-image {
+    width: 120px;
+    height: 120px;
+    margin-top: 15px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Pied du modal */
+.modal-footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.close-button, .source-button {
+    background-color: #007bff; /* Bleu */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover, .source-button:hover {
+    background-color: #0056b3; /* Bleu foncé */
+}
+
+.source-button {
+    background-color: #28a745; /* Vert */
+}
+
+.source-button:hover {
+    background-color: #218838; /* Vert foncé */
+}

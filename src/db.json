@@ -1,0 +1,12 @@
+{
+    "products": [
+      {
+        "barcode": "8718951395848",
+        "name": "Gel Douche Tahiti",
+        "brandImage": "path/to/tahiti-image.jpg",
+        "whyBoycott": "Le produit est fabriqué en Israël.",
+        "alternative": "Gel Douche Palmolive"
+      }
+    ]
+  }
+  

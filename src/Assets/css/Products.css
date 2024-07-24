@@ -1,0 +1,30 @@
+.product-crud {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-crud h2 {
+    color: green;
+    margin-bottom: 20px;
+}
+
+.product-crud table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-crud table th, .product-crud table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.product-crud table th {
+    background-color: #f8f8f8;
+}
+
+.product-crud table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
